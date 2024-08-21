@@ -1,5 +1,5 @@
 {
-  "name": "remote-generate-pdf",
+  "name": pdf-downloader",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
