@@ -42,3 +42,5 @@ app.get('/download', async(req, res) => {
 })
 
 app.listen(port, () => console.log(`Server ready on port ${port}.`));
+
+module.exports = app;
