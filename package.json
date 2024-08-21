@@ -1,14 +1,14 @@
 {
- "name": "remote-generate-pdf",
- "version": "1.0.0",
- "description": "",
- "main": "app.js",
- "scripts": {
-  "start": "node app.js"
- },
- "author": "",
- "license": "ISC",
- "dependencies": {
-  "express": "^4.18.2",
- }
+  "name": "remote-generate-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+   "start": "node app.js"
+  },
+  "author": "daviancode",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
