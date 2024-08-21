@@ -1,2 +1,2 @@
 # express-puppeteer-pdf
- Remote PDF Downloader using Express JS + Puppeteer
+ Remote Generate PDF using Express JS + Puppeteer
