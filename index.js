@@ -36,7 +36,7 @@ app.get('/download', async(req, res) => {
         res.header('Content-Type', 'application/pdf')
         res.header('Content-Disposition', 'attachment; filename="font-license.pdf"')
         res.send(Buffer.from(pdf))
-        res.end()
+        
     } else {
         res.send("Please provide a url")
     }
