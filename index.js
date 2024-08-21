@@ -34,7 +34,6 @@ app.get('/download', async(req, res) => {
         const pdf = await generatePDF(url)
 
         res.header('Content-Type', 'application/pdf')
-        res.header('Content-Disposition', 'attachment; filename="font-license.pdf"')
         res.send(Buffer.from(pdf))
         
     } else {
