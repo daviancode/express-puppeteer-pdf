@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 3000;
 
 async function generatePDF(url) {
     try {
@@ -36,9 +36,10 @@ app.get('/download', async(req, res) => {
         res.header('Content-Type', 'application/pdf')
         res.header('Content-Disposition', 'attachment; filename="font-license.pdf"')
         res.send(Buffer.from(pdf))
+        res.end()
+    } else {
+        res.send("Please provide a url")
     }
-
-    res.send("Please provide a url")
 })
 
 app.listen(port, () => console.log(`Server ready on port ${port}.`));
